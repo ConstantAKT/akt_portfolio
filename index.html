@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Constant Alankpokinto — Étudiant en Ingénierie Informatique, Réseaux & Cybersécurité à l'ESGI Bordeaux">
+  <meta name="author" content="Constant Alankpokinto">
+  <meta name="theme-color" content="#060a10">
+  <title>Constant Alankpokinto — Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background effects -->
+  <canvas id="particles"></canvas>
+  <div class="grid-bg"></div>
+
+  <!-- ======================== NAVIGATION ======================== -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo"><span class="dot"></span>C.ALANKPOKINTO</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#experience">Expériences</a>
+      <a href="#projects">Projets</a>
+      <a href="#skills">Compétences</a>
+      <a href="#documents">Documents</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu de navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="hero-greeting">
+            &gt;&nbsp;<span id="typing-text"></span><span class="cursor"></span>
+          </div>
+          <h1 class="hero-name">Constant<br><span class="highlight">Alankpokinto</span></h1>
+          <p class="hero-role">Étudiant en <strong>Ingénierie Informatique</strong> à l'ESGI Bordeaux — passionné par les <strong>réseaux</strong>, la <strong>cybersécurité</strong> et le <strong>développement</strong>.</p>
+          <div class="hero-tags">
+            <span>Réseaux & Sécurité</span>
+            <span>Développement Web & Mobile</span>
+            <span>Administration Système</span>
+            <span>Support IT</span>
+          </div>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">⬡ Voir mes projets</a>
+            <a href="#documents" class="btn btn-secondary">↓ Télécharger mon CV</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><div class="num">2+</div><div class="label">Stages réalisés</div></div>
+            <div class="hero-stat"><div class="num">4+</div><div class="label">Projets techniques</div></div>
+            <div class="hero-stat"><div class="num">5</div><div class="label">Langages maîtrisés</div></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-frame">
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring2"></div>
+            <img src="https://i.postimg.cc/ncZxFQyB/photo-cv.jpg" alt="Constant Alankpokinto" id="avatar-img">
+            <div class="float-badge">🌐 Réseaux</div>
+            <div class="float-badge">🛡️ Cybersécurité</div>
+            <div class="float-badge">💻 Dev Web</div>
+            <div class="float-badge">🐧 Linux</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div class="section-label">À propos</div>
+          <h2 class="section-title">Qui suis-je ?</h2>
+          <div class="glow-line"></div>
+          <p>Je suis <strong>Constant Alankpokinto</strong>, étudiant en <strong>Bachelor Ingénierie Informatique</strong> à l'ESGI Bordeaux. Passionné par les <strong>systèmes, réseaux et la cybersécurité</strong>, je construis des architectures robustes et développe des applications modernes.</p>
+          <p>Avec une expérience en <strong>support informatique</strong> et en <strong>développement web & mobile</strong>, je combine compétences techniques et capacité d'adaptation pour résoudre des problèmes complexes.</p>
+          <p>Je recherche une <strong>alternance pour 2026-2027</strong> en administration systèmes et réseaux ou en support informatique.</p>
+          <div class="about-info">
+            <div class="info-card"><div class="icon">📍</div><div class="info-label">Localisation</div><div class="info-value">Bordeaux, France</div></div>
+            <div class="info-card"><div class="icon">🎓</div><div class="info-label">Formation</div><div class="info-value">ESGI Bordeaux</div></div>
+            <div class="info-card"><div class="icon">🚗</div><div class="info-label">Permis</div><div class="info-value">Permis B</div></div>
+            <div class="info-card"><div class="icon">🌍</div><div class="info-label">Langues</div><div class="info-value">Français, Anglais</div></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="section-label">Parcours</div>
+          <h2 class="section-title">Formations</h2>
+          <div class="glow-line"></div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="t-date">2025 — 2028</div>
+              <div class="t-title">Bachelor Ingénierie Informatique</div>
+              <div class="t-place">ESGI Bordeaux</div>
+            </div>
+            <div class="timeline-item">
+              <div class="t-date">2022 — 2024</div>
+              <div class="t-title">Formation en Informatique</div>
+              <div class="t-place">HECM Porto-Novo, Bénin</div>
+            </div>
+            <div class="timeline-item">
+              <div class="t-date">2020 — 2021</div>
+              <div class="t-title">Baccalauréat Série Scientifique</div>
+              <div class="t-place">Complexe Scolaire Père Thomas Mouléro, Bénin</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== EXPERIENCE ======================== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label reveal">Expériences</div>
+      <h2 class="section-title reveal">Mon parcours professionnel</h2>
+      <div class="glow-line reveal"></div>
+      <div class="exp-grid">
+
+        <div class="exp-card reveal">
+          <div class="exp-date">
+            <span class="badge">Janv. — Juin 2026</span>
+            Stage
+          </div>
+          <h3>Développeur Web et Mobile</h3>
+          <div class="company">CARREFOUR DES SCIENCES ET DE LA ROBOTIQUE (CDSR) — Gradignan (33)</div>
+          <ul>
+            <li>Développement d'une application mobile de gestion des stages avec Flutter</li>
+            <li>Refonte complète du site web de l'association</li>
+            <li>Animation d'ateliers de robotique pour les jeunes</li>
+            <li>Création de contenus pour les réseaux sociaux</li>
+          </ul>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-date">
+            <span class="badge">Fév. — Juil. 2023</span>
+            Stage
+          </div>
+          <h3>Technicien Support Informatique</h3>
+          <div class="company">Mairie d'Adjarra — Bénin</div>
+          <ul>
+            <li>Installation et configuration des postes informatiques</li>
+            <li>Assistance technique quotidienne auprès des agents municipaux</li>
+            <li>Maintenance du réseau local (diagnostic, câblage, dépannage)</li>
+            <li>Diagnostic et résolution d'incidents matériels et logiciels</li>
+          </ul>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-date">
+            <span class="badge">Fév. — Mars 2026</span>
+            Bénévolat
+          </div>
+          <h3>Arbitre — FIRST LEGO League</h3>
+          <div class="company">Rencontre régionale Nouvelle-Aquitaine — Saint-André-de-Cubzac (33)</div>
+          <ul>
+            <li>Arbitrage des matchs de robots lors de la rencontre régionale</li>
+            <li>Application rigoureuse du règlement officiel FIRST</li>
+            <li>Encadrement bienveillant des équipes participantes</li>
+          </ul>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-date">
+            <span class="badge">Mars 2026</span>
+            Bénévolat
+          </div>
+          <h3>Animateur Numérique</h3>
+          <div class="company">ALSH Mix-Cité / Centre d'Animation Jeunesse — Bordeaux (33)</div>
+          <ul>
+            <li>Animation d'ateliers de programmation pour enfants (CE2-CM2)</li>
+            <li>Initiation à la programmation de robots éducatifs</li>
+            <li>Accompagnement à la création de jeux vidéo sur Scratch</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROJECTS ======================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label reveal">Projets</div>
+      <h2 class="section-title reveal">Mes réalisations</h2>
+      <div class="glow-line reveal"></div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon net">🌐</div>
+            <span class="project-status status-done">✓ Terminé</span>
+          </div>
+          <div class="project-body">
+            <h3>Architecture réseau d'entreprise</h3>
+            <p>Conception d'une architecture réseau hiérarchique pour 100+ employés. 15 VLANs, cluster haute disponibilité FortiGate 100F, switches Cisco Catalyst 9200L et points d'accès Aruba.</p>
+            <div class="project-techs">
+              <span>Cisco</span><span>FortiGate</span><span>VLANs</span><span>VPN</span><span>NAT</span><span>Aruba</span>
+            </div>
+            <div class="project-links">
+              <a href="#">📄 Documentation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon dev">📱</div>
+            <span class="project-status status-done">✓ Terminé</span>
+          </div>
+          <div class="project-body">
+            <h3>App mobile — Gestion de stages</h3>
+            <p>Application mobile développée avec Flutter pour le CDSR. Gestion complète des stages de l'association avec interface intuitive et performante.</p>
+            <div class="project-techs">
+              <span>Flutter</span><span>Dart</span><span>MySQL</span><span>UI/UX</span>
+            </div>
+            <div class="project-links">
+              <a href="#">👁 Voir le projet</a>
+              <a href="#">⌨ Code source</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon robot">🤖</div>
+            <span class="project-status status-done">✓ Terminé</span>
+          </div>
+          <div class="project-body">
+            <h3>Projet Robotique</h3>
+            <p>Conception et programmation d'un robot avec capteurs et actionneurs, piloté en Python. Participation à la FIRST LEGO League Challenge.</p>
+            <div class="project-techs">
+              <span>Python</span><span>Robotique</span><span>IoT</span><span>Capteurs</span>
+            </div>
+            <div class="project-links">
+              <a href="#">📄 Documentation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon net">🔧</div>
+            <span class="project-status status-done">✓ Terminé</span>
+          </div>
+          <div class="project-body">
+            <h3>Configuration réseau local</h3>
+            <p>Configuration complète sur Cisco Packet Tracer : routeurs, switches, postes de travail, adressage IP, passerelles et interconnexion entre sous-réseaux.</p>
+            <div class="project-techs">
+              <span>Cisco Packet Tracer</span><span>TCP/IP</span><span>Routage</span><span>Switching</span>
+            </div>
+            <div class="project-links">
+              <a href="#">📄 Documentation</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== SKILLS ======================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label reveal">Compétences</div>
+      <h2 class="section-title reveal">Mon arsenal technique</h2>
+      <div class="glow-line reveal"></div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(0,229,255,.1);color:var(--cyan)">🌐</div>
+            <div class="skill-cat-name">Réseaux & Sécurité</div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-item-name">TCP/IP, DHCP, DNS</span><div class="skill-bar"><div class="skill-bar-fill cyan" data-width="85%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">VLANs & Routage</span><div class="skill-bar"><div class="skill-bar-fill cyan" data-width="80%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">Cisco (Routeurs/Switches)</span><div class="skill-bar"><div class="skill-bar-fill cyan" data-width="78%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">Sécurité réseau</span><div class="skill-bar"><div class="skill-bar-fill cyan" data-width="72%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(0,255,157,.1);color:var(--green)">💻</div>
+            <div class="skill-cat-name">Systèmes & Virtualisation</div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-item-name">Linux</span><div class="skill-bar"><div class="skill-bar-fill green" data-width="80%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">Windows</span><div class="skill-bar"><div class="skill-bar-fill green" data-width="85%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">QEMU/KVM</span><div class="skill-bar"><div class="skill-bar-fill green" data-width="70%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">Gestion de parc</span><div class="skill-bar"><div class="skill-bar-fill green" data-width="75%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(255,0,170,.1);color:var(--magenta)">⌨</div>
+            <div class="skill-cat-name">Développement</div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-item-name">Python</span><div class="skill-bar"><div class="skill-bar-fill magenta" data-width="75%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">HTML / CSS</span><div class="skill-bar"><div class="skill-bar-fill magenta" data-width="82%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">Flutter / Dart</span><div class="skill-bar"><div class="skill-bar-fill magenta" data-width="70%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">C</span><div class="skill-bar"><div class="skill-bar-fill magenta" data-width="60%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(61,122,255,.1);color:var(--blue)">🗄️</div>
+            <div class="skill-cat-name">Outils & Base de données</div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-item-name">MySQL</span><div class="skill-bar"><div class="skill-bar-fill blue" data-width="72%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">GitHub</span><div class="skill-bar"><div class="skill-bar-fill blue" data-width="78%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">VS Code</span><div class="skill-bar"><div class="skill-bar-fill blue" data-width="88%"></div></div></div>
+            <div class="skill-item"><span class="skill-item-name">Cisco Packet Tracer</span><div class="skill-bar"><div class="skill-bar-fill blue" data-width="82%"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tech logos (tes images postimg.cc conservées) -->
+      <div class="tech-logos reveal">
+        <div class="tech-logo"><img src="https://i.postimg.cc/fbxxZmc9/generer-moi-limage-plus-stilerer-et-plus-adapter-g7hfl7awmgrewtoa2wmf-0.png" alt="Python"><span class="tooltip">Python</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/d1ZRXpW0/generer-moi-limage-plus-stilerer-et-plus-adapter-aka3d7wkt2bi624gwcwy-1.png" alt="HTML/CSS"><span class="tooltip">HTML/CSS</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/KY8hnr0D/generer-moi-limage-plus-stilerer-et-plus-adapter-e93m9sdaog9hwwt0p0re-1.png" alt="Flutter"><span class="tooltip">Flutter</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/ZYcPQ8Hv/generer-moi-limage-plus-stilerer-et-plus-adapter-jaliep2tm4ns4rzod918-1.png" alt="C"><span class="tooltip">C</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/TPtQBBn4/Capture-d-ecran-2026-03-18-162134.png" alt="MySQL"><span class="tooltip">MySQL</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/fbqj8mNS/Capture-d-ecran-2026-03-18-162222.png" alt="Linux"><span class="tooltip">Linux</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/ZKP811mt/Capture-d-ecran-2026-03-18-162326.png" alt="Windows"><span class="tooltip">Windows</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/HLNXwmwQ/Capture-d-ecran-2026-03-18-162542.png" alt="Cisco"><span class="tooltip">Cisco</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/8zP6xcwk/Capture-d-ecran-2026-03-18-162643.png" alt="FortiGate"><span class="tooltip">FortiGate</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/YqtGm05X/Capture-d-ecran-2026-03-18-162720.png" alt="GitHub"><span class="tooltip">GitHub</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/k4xG2Pwv/Capture-d-ecran-2026-03-18-162802.png" alt="VS Code"><span class="tooltip">VS Code</span></div>
+        <div class="tech-logo"><img src="https://i.postimg.cc/050rxxzt/Capture-d-ecran-2026-03-18-162854.png" alt="QEMU/KVM"><span class="tooltip">QEMU/KVM</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== GALLERY ======================== -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-label reveal">Galerie</div>
+      <h2 class="section-title reveal">Technologies & Domaines</h2>
+      <div class="glow-line reveal"></div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item"><span>🌐</span><span class="g-label">RÉSEAUX</span></div>
+        <div class="gallery-item"><span>🛡️</span><span class="g-label">SÉCURITÉ</span></div>
+        <div class="gallery-item"><span>📱</span><span class="g-label">MOBILE</span></div>
+        <div class="gallery-item"><span>🖥️</span><span class="g-label">WEB</span></div>
+        <div class="gallery-item"><span>🐧</span><span class="g-label">LINUX</span></div>
+        <div class="gallery-item"><span>🤖</span><span class="g-label">ROBOTIQUE</span></div>
+        <div class="gallery-item"><span>☁️</span><span class="g-label">CLOUD</span></div>
+        <div class="gallery-item"><span>🗄️</span><span class="g-label">DATABASE</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== DOCUMENTS ======================== -->
+  <section id="documents">
+    <div class="container">
+      <div class="section-label reveal">Documents</div>
+      <h2 class="section-title reveal">Téléchargements</h2>
+      <div class="glow-line reveal"></div>
+      <div class="docs-grid reveal">
+        <a href="documents/CV_Constant_Alankpokinto.pdf" download class="doc-card">
+          <div class="doc-icon">📄</div>
+          <h3>Curriculum Vitae</h3>
+          <p>Mon CV complet au format PDF</p>
+          <div class="doc-download">↓ Télécharger le CV</div>
+        </a>
+        <a href="documents/Lettre_Motivation_Constant.pdf" download class="doc-card">
+          <div class="doc-icon">✉️</div>
+          <h3>Lettre de Motivation</h3>
+          <p>Ma lettre de motivation au format PDF</p>
+          <div class="doc-download">↓ Télécharger la LM</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Travaillons<br>ensemble</h2>
+          <div class="glow-line"></div>
+          <p style="color:var(--text-dim);margin-bottom:2rem;max-width:400px">
+            Vous avez un projet ou une opportunité d'alternance ? N'hésitez pas à me contacter !
+          </p>
+          <div class="contact-info">
+            <a href="mailto:constantbiosse@gmail.com" class="contact-link">
+              <div class="c-icon">✉️</div>
+              <div><div class="c-label">Email</div><div class="c-value">constantbiosse@gmail.com</div></div>
+            </a>
+            <a href="tel:+33743595284" class="contact-link">
+              <div class="c-icon">📞</div>
+              <div><div class="c-label">Téléphone</div><div class="c-value">+33 07 43 59 52 84</div></div>
+            </a>
+            <a href="https://linkedin.com/in/constant-alankpokinto" target="_blank" rel="noopener" class="contact-link">
+              <div class="c-icon">💼</div>
+              <div><div class="c-label">LinkedIn</div><div class="c-value">constant-alankpokinto</div></div>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="contact-link">
+              <div class="c-icon">⌨</div>
+              <div><div class="c-label">GitHub</div><div class="c-value">github.com</div></div>
+            </a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="contact-form">
+            <div class="form-group">
+              <label for="formName">Nom complet</label>
+              <input type="text" placeholder="Votre nom..." id="formName">
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email</label>
+              <input type="email" placeholder="votre@email.com" id="formEmail">
+            </div>
+            <div class="form-group">
+              <label for="formMsg">Message</label>
+              <textarea placeholder="Votre message..." id="formMsg"></textarea>
+            </div>
+            <button class="btn btn-primary btn-submit" onclick="sendForm()">Envoyer le message →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer>
+    <div class="container">
+      <p>© 2026 <a href="#hero">Constant Alankpokinto</a> — Tous droits réservés. Fait avec 💙 à Bordeaux.</p>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
