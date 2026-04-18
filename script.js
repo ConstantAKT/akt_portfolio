@@ -262,19 +262,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3500);
   }
 
-  /* ============ AVATAR FALLBACK ============ */
-  var avatarImg = document.getElementById("avatar-img");
-  if (avatarImg) {
-    avatarImg.addEventListener("error", function () {
-      var placeholder = document.createElement("div");
-      placeholder.style.cssText =
-        "width:100%;height:100%;border-radius:50%;display:flex;align-items:center;" +
-        "justify-content:center;background:linear-gradient(135deg,#0f1a2d,#162240);" +
-        "font-family:Sora,sans-serif;font-size:5rem;font-weight:700;color:#00e5ff;" +
-        "border:3px solid rgba(0,229,255,.25);box-shadow:0 0 60px rgba(0,229,255,.12);";
-      placeholder.textContent = "CA";
-      this.replaceWith(placeholder);
-    });
+  /* ============ AVATAR SLIDESHOW ============ */
+  var slides = document.querySelectorAll(".avatar-slideshow .slide");
+  if (slides.length > 0) {
+    var current = 0;
+    setInterval(function () {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 5000);
   }
 
 });
